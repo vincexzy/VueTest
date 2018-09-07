@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <todo-item
+          v-for = "item in groceryList"
+          v-bind:todo = "item"
+          v-bind:key = "item.id">
+        </todo-item>
+      </ul>
+      <input type="button" name="" value="点击" v-on:click="addmsg">
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
